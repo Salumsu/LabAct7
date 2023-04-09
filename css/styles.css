@@ -1,0 +1,174 @@
+/* 
+ * Colors
+ * 
+ * Dark gray		#34383c
+ * medium gray		#81858a
+ * purple			#620e6e
+ * blue				#4385c1
+ * light blue		#9ac9f4
+ * darker blue		#043867
+ * darkest blue	#002342
+ * blue tint		#e7ecf0
+ * green				#7aa120
+ */
+
+body {
+  background: white;
+  color: #81858a;
+  font: 1em/1.6 Helvetica, Verdana, sans-serif;
+}
+
+header {
+  background: #4385c1;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer {
+  background: #34383c;
+  color: white;
+  padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+h2 {
+  font: 2.25rem/1.2 Helvetica, Verdana, sans-serif;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.925rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #ffffff;
+}
+
+/* Header */
+.branding {
+  color: #9ac9f4;
+  margin: 50px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.branding p {
+  font-size: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 2em;
+  position: relative;
+}
+
+/* navigation */
+#quick-nav,
+header .branding,
+#utilities-nav {
+  width: 33%;
+}
+
+#quick-nav li {
+  border-right: 1px solid #9ac9f4;
+  /* margin: 64px 0 0 5px; */
+  padding: 0 5px 0 0;
+  display: inline-block;
+}
+#quick-nav li:last-of-type {
+  border: none;
+}
+
+nav ul,
+nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*main nav*/
+#main-nav li {
+  border-left: 1px solid #4385c1;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+#main-nav li:last-of-type {
+  border-right: 1px solid #4385c1;
+}
+
+#main-nav a {
+  display: block;
+  padding: 0.5em 0;
+  background-color: #002342;
+}
+#main-nav a:hover {
+  background-color: #002342;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container > nav {
+  position: absolute;
+  left: 2rem;
+}
+
+#main-nav > ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#main-nav > ul li {
+  width: 100%;
+}
+
+#main-nav > ul li a {
+  color: #4385c1;
+  font-weight: bold;
+}
+
+main :is(a, a:visited, a:hover) {
+  color: rgba(67, 133, 193);
+}
+
+/* #full-nav {
+  display: flex;
+} */
+
+#full-nav {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.column {
+  break-inside: avoid;
+}
